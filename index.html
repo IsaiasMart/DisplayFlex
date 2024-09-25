@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <style>
         .container {
             display: flex;
             justify-content: start;
-            align-items: start;
-            height: 100svh;
+            box-shadow: 0 0 16px #1e1e1e;
+            /* align-items: start;
+            height: 100svh;*/
         }
+
         .item {
             width: 100px;
             height: 100px;
-            background: lightblue;
-            border: 1px blue;
+            /*background: lightblue;
+            border: 1px solid blue;*/
             margin: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+        }
+
+        .item:first-child {
+            flex: auto;
+            justify-content: start;
+            /* overflow: hidden;*/
+        }
+
+        .item {
+            justify-content: end;
+        }
+
+        .link-pretty {
+            text-decoration: none;
+            color: black;
+        }
+
+        .link-pretty:hover {
+            text-decoration: underline;
         }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+        <div class="item"><img src="https://static-cse.canva.com/blob/951789/1250logotiposqueteinspiraran.png"
+                style="height: 100PX;"></div>
+        <div class="item"><a class="link-pretty" href="https://www.coca-cola.com/es/es">web</a></div>
+        <div class="item"><a class="link-pretty" href="https://www.w3schools.com/html/html_links.asp"><img
+                    src="https://www.svgrepo.com/show/535115/alien.svg" style="width:50px;"></a></div>
     </div>
-    
+
 </body>
+
 </html>
